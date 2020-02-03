@@ -4,8 +4,7 @@
    }
    stage('Compile-Package'){
     
-      def mvnHome =  tool name: 'MAVEN', type: 'MAVEN'   
-      sh "${mvnHome}D:\DEVOPS_SOFT64BIT\apache-maven-3.6.0"
+      def mvnHome =  tool name: 'maven', type: 'maven'
    }
    stage('Email Notification'){
       mail bcc: '', body: '''Hi Welcome to jenkins email alerts
